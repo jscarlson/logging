@@ -10,8 +10,6 @@ update_counter = 0
 
 if model == "CUT":
 
-    print(log_update)
-
     if log_update.startswith("(epoch:"):
 
         log_update = re.sub('[,():]', '', log_update)
@@ -32,11 +30,6 @@ if model == "CUT":
             writer.writerow(log_values)
 
         update_counter += 1
-
-else:
-
-    print("Not a known model...", end=" ")
-    print(log_update)
     
             
 
