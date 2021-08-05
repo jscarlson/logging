@@ -5,7 +5,7 @@ import csv
 
 model = sys.argv[1]
 log_update = sys.argv[2]
-save_path = "./logging/train/log.csv"
+save_path = "../logging/train/log.csv"
 update_counter = 0
 
 if model == "CUT":
